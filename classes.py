@@ -209,10 +209,10 @@ class Net():
                 
                 # print loss graphs
                 if i != 0:
-                    colors = [('#004f11', '#73ff91'), ('#386ed9', '#95b5f5'), ('#d10000')]
+                    colors = [('#004f11', '#73ff91'), ('#386ed9', '#95b5f5'), ('#d10000',)]
                     arrs = [(self.a_computer_losses, self.a_handwritten_losses),
                             (self.d_computer_losses, self.d_handwritten_losses),
-                            (self.c_losses)]
+                            (self.c_losses,)]
                     names = [('Adapter Loss (Computer)', 'Adapter Loss (Handwritten)'),
                              ('Discriminator Loss (Computer)','Discriminator Loss (Handwritten)'),
                              ('Classifier Loss',)]
