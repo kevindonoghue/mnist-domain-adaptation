@@ -197,7 +197,7 @@ class Net():
                 X_computer = FloatTensor(images['computer']['test']).reshape(-1, 1, 28, 28)
                 y_computer = LongTensor(labels['computer']['test'])
                 X_handwritten = FloatTensor(images['handwritten']['test']).reshape(-1, 1, 28, 28)
-                y_handwritten = LongTensor(labels['handwritten'['test']])
+                y_handwritten = LongTensor(labels['handwritten']['test'])
                 computer_score = self.score(X_computer, y_computer)
                 handwritten_score = self.score(X_handwritten, y_handwritten)
                 lc = round(loss_C.item(), 4)
